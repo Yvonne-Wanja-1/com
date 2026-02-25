@@ -12,8 +12,6 @@ class GameSetupScreen extends StatefulWidget {
 class _GameSetupScreenState extends State<GameSetupScreen> {
   String _gameMode = 'pvp'; // 'pvp' or 'ai'
   String _difficulty = 'medium'; // 'easy', 'medium', 'hard'
-  String _whitePlayer = 'Human';
-  String _blackPlayer = 'Human';
 
   @override
   Widget build(BuildContext context) {

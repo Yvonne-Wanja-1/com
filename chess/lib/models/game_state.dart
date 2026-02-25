@@ -134,7 +134,7 @@ class GameState extends ChangeNotifier {
 
   void undoLastMove() {
     if (_moveHistory.isNotEmpty) {
-      final lastMove = _moveHistory.removeLast();
+      _moveHistory.removeLast();
       _board.resetBoard();
       for (var move in _moveHistory) {
         _board.makeMove(move);

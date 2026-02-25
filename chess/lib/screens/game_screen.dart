@@ -8,9 +8,11 @@ class GameScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        return await _showExitDialog(context);
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (didPop) {
+        if (didPop) return;
+        _showExitDialog(context);
       },
       child: Scaffold(
         appBar: AppBar(

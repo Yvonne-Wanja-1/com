@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 40),
-              const Icon(Icons.chess_pawn, size: 80, color: Colors.white),
+              Icon(Icons.gamepad, size: 80, color: Colors.amber[100]),
               const SizedBox(height: 20),
               const Text(
                 'Chess Master',
